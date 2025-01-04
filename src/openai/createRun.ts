@@ -12,6 +12,6 @@ export async function createRun(client: OpenAI, thread: Thread, assistantId:stri
         run = await client.beta.threads.runs.retrieve(thread.id, run.id);
     }
 
-    return run;
+    return run; 
 
 }
